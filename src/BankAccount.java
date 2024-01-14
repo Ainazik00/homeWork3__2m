@@ -10,8 +10,8 @@ public class BankAccount {
     }
 
     public void deposit(double sum) {
-            amount += sum;
-        }
+        amount += sum;
+    }
 
     public void withDraw(double sum) throws LimitException {
         if (sum > amount) {
@@ -20,5 +20,6 @@ public class BankAccount {
             amount -= sum;
         }
     }
+
 }
 
